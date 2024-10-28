@@ -6,8 +6,8 @@
         <h1 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
         <ul class="post-meta">
             <li><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
-            <li><?php $this->category(','); ?></li>
-            <li><?php $this->tags(', ', true, 'none'); ?></li>
+            <li><?php $this->category(',', true, 'None'); ?></li>
+            <li><?php $this->tags(', ', true, 'None'); ?></li>
         </ul>
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>

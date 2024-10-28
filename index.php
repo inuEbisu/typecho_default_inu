@@ -1,10 +1,9 @@
 <?php
 /**
- * 默认皮肤，但魔改
- *
- * - Edited by <a href="https://inuebisu.cn">inuEbisu</a>
+ * Default theme for Typecho
+ * Edited by <a href="https://inuebisu.cn">inuEbisu</a>
  * 
- * @package Typecho Replica Theme Modified
+ * @package Typecho Replica Puppy
  * @author Typecho Team
  * @version 1.2.1
  * @link https://typecho.org
@@ -20,8 +19,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
 			<ul class="post-meta">
 				<li><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(''); ?></time></li>
-				<li><?php $this->category(','); ?></li>
-				<li><?php $this->tags(', ', true, 'none'); ?></li>
+				<li><?php $this->category(',', true, 'None'); ?></li>
+				<li><?php $this->tags(', ', true, 'None'); ?></li>
 			</ul>
         </article>
 	<?php endwhile; ?>
